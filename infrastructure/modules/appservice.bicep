@@ -35,4 +35,4 @@ resource webAppConfig 'Microsoft.Web/sites/config@2020-06-01' = {
 }
 
 
-output aappServiceId  string = webApp.id
+output appServiceId  string = webApp.id
