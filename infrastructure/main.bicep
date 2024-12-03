@@ -1,7 +1,5 @@
-
 param location string = resourceGroup().location
-
-var uniqueId =  uniqueString(resourceGroup().id)
+var uniqueId = uniqueString(resourceGroup().id)
 
 module apiService 'modules/appservice.bicep' = {
   name: 'apiDeployment'

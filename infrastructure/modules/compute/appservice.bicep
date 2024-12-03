@@ -8,9 +8,9 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   location: location
   name: appServicePlanName
   properties: {
-    reserved:  true
+    reserved: true
   }
-      sku: {
+  sku: {
     name: 'B1'
   }
 }
@@ -23,18 +23,22 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
     httpsOnly: true
     siteConfig: {
       linuxFxVersion: 'DOTNETCORE|9.0'
-        appSettings: [
-              {
-                name: 'KeyVaultName'
-                value: keyVaultName
-              }
-            ]
+      appSettings: [
+        {
+          name: 'KeyVaultName'
+          value: keyVaultName
+        }
+      ]
     }
-     }
-     identity: {
-       type: 'SystemAssigned'
-     }
-   }
+  }
+  identity: {
+    type: 'SystemAssigned'
+  }
+  
+  
+  
+  
+}
 
 resource webAppConfig 'Microsoft.Web/sites/config@2023-12-01' = {
   parent: webApp
