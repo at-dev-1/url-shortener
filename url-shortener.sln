@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Api", "Api\UrlShortener.Api\UrlShortener.Api.csproj", "{55548DE9-B736-413E-83EF-A1D04C6EC14B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Api", "Api\src\UrlShortener.Api\UrlShortener.Api
+.csproj", "{55548DE9-B736-413E-83EF-A1D04C6EC14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Api", "Api\src\UrlShortener.Api\UrlShortener.Api.csproj", "{AD31B09F-1733-4F21-B245-95570EBD2369}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{989F21E0-5BC8-4844-81FC-B98C96AA036F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BC344E6A-FFA4-41C9-BDAE-C0FB311F7316}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D1E82AD9-46D9-4BA9-B565-1B2C06F1A763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Api.Core.Tests", "Api\tests\UrlShortener.Api.Core.Tests\UrlShortener.Api.Core.Tests.csproj", "{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Core", "Api\src\UrlShortener.Core\UrlShortener.Core.csproj", "{EC0C90EE-F378-4939-AF13-5803A02C42E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +31,24 @@ Global
 		{55548DE9-B736-413E-83EF-A1D04C6EC14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55548DE9-B736-413E-83EF-A1D04C6EC14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55548DE9-B736-413E-83EF-A1D04C6EC14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD31B09F-1733-4F21-B245-95570EBD2369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD31B09F-1733-4F21-B245-95570EBD2369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD31B09F-1733-4F21-B245-95570EBD2369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD31B09F-1733-4F21-B245-95570EBD2369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0C90EE-F378-4939-AF13-5803A02C42E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0C90EE-F378-4939-AF13-5803A02C42E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0C90EE-F378-4939-AF13-5803A02C42E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0C90EE-F378-4939-AF13-5803A02C42E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC344E6A-FFA4-41C9-BDAE-C0FB311F7316} = {989F21E0-5BC8-4844-81FC-B98C96AA036F}
+		{AD31B09F-1733-4F21-B245-95570EBD2369} = {BC344E6A-FFA4-41C9-BDAE-C0FB311F7316}
+		{D1E82AD9-46D9-4BA9-B565-1B2C06F1A763} = {989F21E0-5BC8-4844-81FC-B98C96AA036F}
+		{6A5F83D3-E753-4FF1-9BA5-FB1280BB8B1C} = {D1E82AD9-46D9-4BA9-B565-1B2C06F1A763}
+		{EC0C90EE-F378-4939-AF13-5803A02C42E9} = {BC344E6A-FFA4-41C9-BDAE-C0FB311F7316}
 	EndGlobalSection
 EndGlobal
