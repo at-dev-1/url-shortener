@@ -5,13 +5,13 @@ resource keyVault 'Microsoft.KeyVault/vaults@2023-07-01' = {
   name: vaultName
   location: location
   properties: {
-      sku: {
-          name: 'standard'
-          family: 'A'
-          }
-      enableRbacAuthorization: true
-        tenantId: subscription().tenantId
-        }
+    sku: {
+      name: 'standard'
+      family: 'A'
+    }
+    enableRbacAuthorization: true
+    tenantId: subscription().tenantId
+  }
 }
 
 output id string = keyVault.id
