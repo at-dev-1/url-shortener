@@ -1,0 +1,4 @@
+   TEST LIST
+  - Avoid duplicates when generating TokenGenerators
+  - Accept multiple Ranges
+  - _tokenRange on TokenProvider can be null
